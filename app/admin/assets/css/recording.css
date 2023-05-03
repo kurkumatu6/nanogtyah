@@ -1,0 +1,27 @@
+:root {
+    --color-light-brown: #dea174;
+    --color-brown: #8c5940;
+    --color-light-grey: #ececec;
+    --color-green: #82e075;
+    --color-red: #f18383;
+}
+
+#btnReasonCancel {
+    padding: 10px 15px;
+    border: 1px solid var(--color-red);
+    color: var(--color-red);
+}
+
+#btnReasonCancel {
+    padding: 10px 15px;
+    border: 1px solid var(--color-red);
+    color: var(--color-red);
+}
+
+.btn-make {
+    color: var(--color-green);
+}
+
+.btn-make:hover {
+    color: var(--color-green);
+}

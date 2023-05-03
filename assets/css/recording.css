@@ -1,0 +1,116 @@
+:root {
+    --color-light-brown: #dea174;
+    --color-brown: #8c5940;
+    --color-green: #82e075;
+    --color-red: #f18383;
+    --color-light-grey: #f1f1f1;
+    --color-dark-grey: #727272;
+}
+
+.recording {
+    margin: 3rem auto;
+    max-width: 960px;
+    background: white;
+    border-radius: 1rem;
+    padding: 2rem;
+    color: var(--color-brown);
+}
+
+.cards-container {
+    max-height: 600px;
+}
+.card {
+    color: var(--color-brown);
+}
+
+
+.service-img img {
+    width: 100%;
+}
+
+.card-header {
+    background: none;
+    padding: 0;
+}
+
+.card-time {
+    padding: 10px 22px;
+    border-radius: 25px;
+    color: #fff;
+}
+
+.card-time.isFree {
+    background: var(--color-green);
+}
+
+.card-time.isBusy {
+    background: var(--color-red);
+}
+
+.card-btn {
+    width: 160px;
+}
+th {
+    color: #c5b0a6;
+}
+.table {
+    color: var(--color-brown);
+}
+
+.modal-body .card-img {
+    height: 260px;
+    width: 100%;
+}
+
+.table > :not(caption) > * > * {
+    padding: 20px;
+}
+
+.card-placeholder {
+    color: var(--color-light-brown);
+}
+
+.card-image-placeholder {
+    background: #f1dbcb;
+    width: 100%;
+    height: 300px;
+}
+@media(max-width:430px) {
+    .cards-container{
+        max-width: 350px;
+        margin: auto;
+    }
+    .card-title{
+        font-size: 15px;
+    }
+
+    .card-btn{
+        font-size: 14px;
+        padding: 5px 8px;
+        width:80px;
+    }
+    .card-time {
+        font-size: 14px;
+        padding: 5px 8px;
+    }
+    .service-img>img{
+        height: 200px;
+        object-fit: cover;
+    }
+    .card-text{
+        font-size: 12px;
+    }
+    .text-muted{
+        font-size: 12px;
+    }
+    th{
+        font-size: 8px;
+    }
+    .table > :not(caption) > * > * {
+        padding: 3px;
+    }
+    td{
+        font-size: 10px;
+    }
+    
+}

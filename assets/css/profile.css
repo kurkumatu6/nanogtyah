@@ -1,0 +1,130 @@
+:root {
+    --color-light-brown: #dea174;
+    --color-brown: #8c5940;
+    --color-light-grey: #ececec;
+    --color-green: #82e075;
+    --color-red: #f18383;
+}
+
+body {
+    background: var(--color-light-grey);
+}
+.profile {
+    padding: 15px;
+    max-width: 1300px;
+    color: var(--color-brown);
+}
+
+.profile-content {
+    border-radius: 22px;
+    padding: 30px;
+}
+
+.list-group-item.active {
+    background: #fff;
+    border-color: var(--color-light-grey);
+}
+
+.list-group-item a {
+    padding: 10px 20px;
+    color: var(--color-light-brown);
+}
+.list-group-item.active a {
+    color: #fff;
+
+    background: var(--color-light-brown);
+    border: none;
+    border-radius: 22px;
+}
+
+.card-time {
+    padding: 10px 22px;
+    border-radius: 25px;
+    color: #fff;
+    width: 100px;
+}
+
+.card-time.isPlanned {
+    background: var(--color-light-brown);
+}
+
+.card-time.isDone {
+    background: var(--color-green);
+}
+
+.card-time.isCancel {
+    background: var(--color-red);
+}
+
+.modal-confirm .modal-header {
+    background: var(--color-red);
+}
+
+.card {
+    border-color: var(--color-light-grey);
+}
+
+.btn-cancel {
+    color: var(--color-red);
+}
+
+.btn-cancel:hover {
+    color: var(--color-red);
+}
+
+.placeholder {
+    border-radius: 22px;
+}
+td {
+    padding: 25px 5px !important;
+}
+.table {
+    color: var(--color-brown);
+}
+
+.btn-cancel-placeholder {
+    width: 80px;
+}
+@media(max-width:430px) {
+    .profile{
+        max-width: 400px;
+    }
+    .profile-content{
+        padding: 15px;
+    }
+    .card-img{
+        width: 150px;
+        height: 150px;
+    }
+    .list-group-item a{
+        font-size: 15px;
+        padding: 5px;
+    }
+    .list-group-item{
+        padding: 0px;
+    }
+    th{
+        font-size: 8px;
+    }
+    td{
+        font-size: 10px;
+        vertical-align: middle;
+        min-width: 60px;
+        padding: 15px 0px  !important;
+        }
+    .card-time{
+        font-size: 8px;
+        width: 50px;
+        padding: 8px 6px;
+    }
+    .btn-cancel{
+        font-size: 10px;
+        padding: 0px;
+    }
+    .alert{
+        font-size: 12px;
+    }
+    #selectStatus{
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,110 @@
+:root {
+    --color-1: #dea174;
+    --color-1-hover: #dea174;
+    --color-2: #dea174;
+    --color-2-hover: #dea174;
+    --text-color: #dea174;
+    --status-btn-bg: #f1f1f1;
+    --status-btn-bg-hover: #f1f1f1;
+}
+body {
+    background: #f1f1f1;
+}
+
+.form-input {
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+    box-shadow: inset 0px 1px 2px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    box-sizing: border-box;
+    color: var(--text-color);
+    transition: ease-in-out 0.3s all;
+}
+
+.form-input::placeholder {
+    color: #cbd5e1;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: var(--color-1);
+}
+
+.btn:focus-within,
+.form-input:focus-within {
+    box-shadow: #f8fafc 0px 0px 0px 2px, #c7d2fe 0px 0px 0px 6px, #0000 0px 1px 2px 0px;
+}
+
+textarea.form-input {
+    min-height: 150px;
+}
+
+.btn {
+    border: 1px solid #fff;
+    background: var(--color-1);
+    padding: 10px 22px;
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+}
+
+.btn[disabled] {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.btn:hover:not(.placeholder) {
+    border: 1px solid var(--color-1-hover);
+    background: #fff;
+    color: var(--color-1-hover);
+    transition: ease-in-out 0.3s all;
+}
+
+.btn-submit {
+    background-color: var(--color-2);
+}
+
+.btn-submit:hover {
+    background-color: var(--color-2-hover);
+}
+
+.pagination {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pagination .btn {
+    width: 100%;
+    text-align: center;
+    margin: 0 6px;
+}
+
+.tab-status {
+    display: flex;
+    align-items: center;
+}
+
+.tab-status span {
+    appearance: none;
+    background: var(--status-btn-bg);
+    border: none;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    margin-right: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tab-status span.active {
+    background-color: var(--color-2);
+    color: white;
+}
+
+.hidden {
+    display: none;
+}
